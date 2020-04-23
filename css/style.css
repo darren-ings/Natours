@@ -613,6 +613,14 @@ body {
           content: "";
           display: table;
           clear: both; } }
+    @media (max-width: 37.5em) {
+      .popup__content {
+        display: block;
+        width: 90%; }
+        .popup__content::after {
+          content: "";
+          display: table;
+          clear: both; } }
   .popup__left {
     width: 33.3333333%;
     display: table-cell; }
@@ -640,6 +648,9 @@ body {
         display: inline-block;
         max-width: 50%;
         float: left; } }
+    @media (max-width: 37.5em) {
+      .popup__img {
+        display: none; } }
   .popup__text {
     font-size: 1.4rem;
     margin-bottom: 4rem;
@@ -970,7 +981,7 @@ body {
       padding: 40rem 5rem 10rem 5rem; } }
   @media (max-width: 37.5em) {
     .section-tours {
-      padding: 23rem 5rem 23rem 5rem; } }
+      padding: 23rem 5rem 10rem 5rem; } }
 
 .section-stories {
   position: relative;
