@@ -67,12 +67,12 @@
 		backface-visibility: hidden;
 	}
 
-	&:hover &__caption {
+	&:hover &:focus &__caption {
 		opacity: 1;
 		transform: translate(-50%, -50%);
 	}
 
-	&:hover &__image {
+	&:hover &:focus &__image {
 		transform: translateX(-4rem) scale(1);
 		filter: blur(3px) brightness(80%);
 	}

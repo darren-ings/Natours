@@ -1,0 +1,35 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	font-size: 62.5%;
+	/* Standard web font size default is 16px. now we want to make it 10px. but just changing it to 10px is bad for usability for people with bad sight so best to use percentages here do the REMs work down the page. so divide 16 by 10 to get your % */
+
+	// 1rem = 10px; 10px/16px = 62.5%
+
+	@include respond(tab-land) {
+		font-size: 56.25%; //1rem = 9px, 9/16
+	}
+
+	@include respond(tab-port) {
+		font-size: 50%; //1rem = 8px, 8/16
+	}
+
+	@include respond(big-desktop) {
+		font-size: 75%; //1rem = 12px, 12/16
+	}
+}
+
+body {
+	box-sizing: border-box;
+	padding: 3rem;
+
+	@include respond(tab-port) {
+		padding: 0;
+	}
+}

@@ -39,11 +39,11 @@
 		}
 	}
 
-	&:hover &__side--front {
+	&:hover &:focus &__side--front {
 		transform: rotateY(-180deg);
 	}
 
-	&:hover &__side--back {
+	&:hover &:focus &__side--back {
 		transform: rotateY(0);
 	}
 
@@ -179,7 +179,7 @@
 			}
 		}
 
-		&:hover &__side--front {
+		&:hover &:focus &__side--front {
 			transform: rotateY(0);
 		}
 

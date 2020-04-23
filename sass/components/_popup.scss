@@ -115,7 +115,8 @@
 			line-height: 1;
 		}
 
-		&:hover {
+		&:hover,
+		&:focus {
 			color: $color-primary;
 		}
 	}

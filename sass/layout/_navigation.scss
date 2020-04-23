@@ -100,6 +100,7 @@
 		}
 
 		&:hover,
+		&:focus,
 		&:active {
 			background-position: 100%;
 			color: $color-primary-dark;
@@ -151,11 +152,11 @@
 
 	//this creates the cross on click
 
-	&__button:hover &__icon::before {
+	&__button:hover &__button:focus &__icon::before {
 		top: -1rem;
 	}
 
-	&__button:hover &__icon::after {
+	&__button:hover &__button:focus &__icon::after {
 		top: 1rem;
 	}
 
